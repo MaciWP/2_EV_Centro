@@ -57,13 +57,4 @@ public class CursoServiceImpl implements CursoService {
         }
         return false;
     }
-
-    @Override
-    public Curso agregarCurso(Curso curso) {
-        if (curso.getAula() != null && curso.getAula().getId() != null) {
-            Optional<Aula> aulaOpt = aulaRepository.findById(curso.getAula().getId());
-            aulaOpt.ifPresent(curso::setAula);
-        }
-        return cursoRepository.save(curso);
-    }
 }

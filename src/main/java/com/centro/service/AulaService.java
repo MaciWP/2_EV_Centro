@@ -8,6 +8,4 @@ public interface AulaService {
     List<Aula> getAllAulas();
 
     List<Aula> getAulasWithCapacityGreaterThan(Integer capacidad);
-
-    Aula agregarAula(Aula aula);
 }

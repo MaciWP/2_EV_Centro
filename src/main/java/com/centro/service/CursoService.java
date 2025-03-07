@@ -17,5 +17,4 @@ public interface CursoService {
 
     boolean addProfesorToCurso(Integer cursoId, Integer profesorId);
 
-    Curso agregarCurso(Curso curso);
 }

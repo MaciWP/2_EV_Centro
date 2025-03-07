@@ -22,9 +22,4 @@ public class AulaServiceImpl implements AulaService {
     public List<Aula> getAulasWithCapacityGreaterThan(Integer capacidad) {
         return aulaRepository.findByCapacidadGreaterThan(capacidad);
     }
-
-    @Override
-    public Aula agregarAula(Aula aula) {
-        return aulaRepository.save(aula);
-    }
 }
