@@ -20,8 +20,8 @@ public class AulaController {
         return new ResponseEntity<>(aulaService.getAllAulas(), HttpStatus.OK);
     }
 
-    @GetMapping("/capacidad")
-    public ResponseEntity<List<Aula>> getAulasWithCapacityGreaterThan(@RequestParam Integer capacidad) {
-        return new ResponseEntity<>(aulaService.getAulasWithCapacityGreaterThan(capacidad), HttpStatus.OK);
+    @GetMapping("/capacidad30")
+    public ResponseEntity<List<Aula>> getAulasWithCapacityGreaterThan() {
+        return new ResponseEntity<>(aulaService.getAulasWithCapacityGreaterThan(30), HttpStatus.OK);
     }
 }
