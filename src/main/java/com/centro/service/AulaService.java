@@ -1,4 +1,13 @@
 package com.centro.service;
 
-public class AulaService {
+import com.centro.model.Aula;
+import java.util.List;
+
+public interface AulaService {
+
+    List<Aula> getAllAulas();
+
+    List<Aula> getAulasWithCapacityGreaterThan(Integer capacidad);
+
+    Aula agregarAula(Aula aula);
 }
